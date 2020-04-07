@@ -1,0 +1,11 @@
+version: "3"
+services:
+  jenkins:
+    container_name: dotnettest
+    image: rsi1982/pipelinesdotnetcoredocker
+    ports:
+      - "8087:5000"
+    networks:
+      - net
+ networks:
+  net:
