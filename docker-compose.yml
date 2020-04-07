@@ -1,11 +1,15 @@
-version: "3"
+version: "3.7"
+
 services:
-  jenkins:
-    container_name: dotnettest
-    image: rsi1982/pipelinesdotnetcoredocker
+  wordpress:
+    image: rsi1982 / pipelinesdotnetcoredocker
     ports:
       - "8087:5000"
     networks:
       - net
- networks:
-  net:
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: vip
+networks:
+- net
