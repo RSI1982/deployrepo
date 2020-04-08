@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   pipelinesdotnetcoredocker:
-    image: rsi1982 / pipelinesdotnetcoredocker
+    image: rsi1982/pipelinesdotnetcoredocker
     ports:
       - "8087:5000"
     networks:
