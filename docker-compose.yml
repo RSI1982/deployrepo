@@ -5,8 +5,6 @@ services:
     image: rsi1982/pipelinesdotnetcoredocker:15
     ports:
       - "8087:5000"
-    networks:
-      - net
     deploy:
       mode: replicated
       replicas: 2
